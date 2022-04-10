@@ -30,7 +30,7 @@ Output the image using cv2.imshow("OUTPUT", image)
 # (i) bgr and rgb to hsv and gray
 
 import cv2
-house_color_image = cv2.imread('car.png')
+house_color_image = cv2.imread('car.jpg')
 cv2.imshow('original image',house_color_image)
 hsv_image = cv2.cvtColor(house_color_image,cv2.COLOR_BGR2HSV)
 cv2.imshow('BGR2HSV',hsv_image)
@@ -100,7 +100,7 @@ cv2.destroyAllWindows()
 # (v)Split and merge HSV Image
 
 import cv2
-img = cv2.imread("car.png")
+img = cv2.imread("car.jpg")
 img1= cv2.resize(img, (270,190))
 hsv = cv2.cvtColor(img1 , cv2.COLOR_BGR2HSV)
 cv2.imshow("INITIAL_HSV ", hsv)
