@@ -24,7 +24,8 @@ Anaconda - Python 3.7
 # Developed By:GANAPATHI VENKATESH
 # Register Number:212220230018
 ```python
-# (i) bgr and rgb to hsv and gray
+```
+## (i) bgr and rgb to hsv and gray 
 
 import cv2
 
@@ -56,7 +57,8 @@ cv2.waitKey(0)
 
 cv2.destroyAllWindows()
 ```
-```python
+```
+
 # (ii)Convert HSV to RGB and BGR
 
 img = cv2.imread("car.jpg")
@@ -80,7 +82,8 @@ cv2.imshow("HSV_BGR", hsv_bgr)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-```python
+```
+
 # (iii)convert RGB and BGR to YCrCb
 
 import cv2
@@ -108,7 +111,8 @@ cv2.imshow("RGB2YCrCb", img_bgr_y)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-```python
+```
+
 # (iv) Split and Merge RGB Image
 img = cv2.imread("car.jpg")
 
@@ -134,7 +138,7 @@ cv2.waitKey(0)
 
 cv2.destroyAllWindows()
 ```
-```python
+```
 
 # (v)Split and merge HSV Image
 
