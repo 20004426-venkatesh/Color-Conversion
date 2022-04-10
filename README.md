@@ -5,27 +5,28 @@ To perform the color conversion between RGB, BGR, HSV, and YCbCr color models.
 ## Software Required:
 Anaconda - Python 3.7
 ## Algorithm:
-### Step1:
-<br>
 
-### Step2:
-<br>
+Step1:
+Import cv2 library and upload the image or capture an image.
 
-### Step3:
-<br>
+Step2:
+Read the saved image using cv2.imread("filename.jpg").
 
-### Step4:
-<br>
+Step3:
+Convert the image into the given color transformation using cv2.cvtColor(image, cv2.BGR2YCrCb) and similarly for other color formats.
 
-### Step5:
-<br>
+Step4:
+Split and merge the image using cv2.split(hsv) and cv2.merge([h,s,v])
+
+Step5:
+Output the image using cv2.imshow("OUTPUT", image)
 
 ## Program:
+```python
 # Developed By:GANAPATHI VENKATESH
 # Register Number:212220230018
-```python
-```
-## (i) bgr and rgb to hsv and gray 
+
+# (i) bgr and rgb to hsv and gray
 
 import cv2
 
@@ -56,8 +57,6 @@ cv2.imshow('RGB 2 GREY',rgb_grey)
 cv2.waitKey(0)
 
 cv2.destroyAllWindows()
-```
-```
 
 # (ii)Convert HSV to RGB and BGR
 
@@ -81,8 +80,6 @@ cv2.imshow("HSV_BGR", hsv_bgr)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-```
-```
 
 # (iii)convert RGB and BGR to YCrCb
 
@@ -110,8 +107,6 @@ cv2.imshow("RGB2YCrCb", img_bgr_y)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-```
-```
 
 # (iv) Split and Merge RGB Image
 img = cv2.imread("car.jpg")
@@ -137,8 +132,7 @@ cv2.imshow("MERGED IMAGE", merger )
 cv2.waitKey(0)
 
 cv2.destroyAllWindows()
-```
-```
+
 
 # (v)Split and merge HSV Image
 
@@ -169,6 +163,9 @@ cv2.imshow("MERGED IMAGE", merger )
 cv2.waitKey(0)
 
 cv2.destroyAllWindows()
+
+
+
 
 
 
